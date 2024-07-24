@@ -90,7 +90,7 @@ def main():
     node_web_api = AlgNodeWeb(cfg['web_port'], node)
 
     node.start()
-    node_web_api.run()
+    node_web_api.run(host="0.0.0.0")
 
     print('start node')
     while True:
